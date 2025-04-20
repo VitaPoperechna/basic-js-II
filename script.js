@@ -10,7 +10,7 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 
 //Ejercicio 1: Escribe un condicional if/else que imprima en la consola 'Eres mayor de edad' cuando la constante age tenga el valor correspondiente, si no es así, debe imprimir 'No eres aún mayor de edad'
 
-const age = 18
+const age = 12
 if(age < 18) {
     console.log('No eres aún mayor de edad')
 } else {
@@ -24,7 +24,7 @@ if(age < 18) {
 
 //Ejercicio 3: Escribe un condicional if/else que lea la constante pet y si es un perro, que imprima en la consola "Tengo un perro", si es un gato, que imprima en la consola "Tengo un gato", si es un pájaro, que imprima en la consola "Tengo un pájaro" y si no es ninguno de los 3 que imprima "No tengo una mascota convencional"
 
-const pet = "perro";
+const pet = "serpiente";
 if(pet == "perro") {
     console.log("Tengo un perro");
 } else if(pet == "gato") {
@@ -60,7 +60,7 @@ switch(pet) {
 
 //Ejercicio 6: Usando un operador ternario, escribe un programa que lea la constante weather e imprima en consola si es soleado "Me vestiré con un vestido" y si no es así que imprima "Me vestiré con pantalón"
 
-const weather = "soleado"
+const weather = "frío"
 
 const result = weather == "soleado" ? "Me vestiré con un vestido":"Me vestiré con pantalón" 
 //Escribe tu código aquí
@@ -139,16 +139,19 @@ for (let n of names) {
 let index = 1
 while (index <= 5) {
     console.log(index)
+    index ++
 }
 //Escribe tu código aquí
 
 
 //Ejercicio 13: Realiza el mismo ejercicio anterior pero con un bucle do while.
 
+let index1 = 1
 do {
-    console.log(index)
+    console.log(index1)
+    index1 ++
 }
-while (index <= 5) 
+while (index1 <= 5) 
 //Escribe tu código aquí
 
 
