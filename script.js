@@ -11,6 +11,11 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 //Ejercicio 1: Escribe un condicional if/else que imprima en la consola 'Eres mayor de edad' cuando la constante age tenga el valor correspondiente, si no es así, debe imprimir 'No eres aún mayor de edad'
 
 const age = 18
+if(age < 18) {
+    console.log('No eres aún mayor de edad')
+} else {
+    console.log('Eres mayor de edad')
+}
 //Escribe tu código aquí
 
 
@@ -20,6 +25,15 @@ const age = 18
 //Ejercicio 3: Escribe un condicional if/else que lea la constante pet y si es un perro, que imprima en la consola "Tengo un perro", si es un gato, que imprima en la consola "Tengo un gato", si es un pájaro, que imprima en la consola "Tengo un pájaro" y si no es ninguno de los 3 que imprima "No tengo una mascota convencional"
 
 const pet = "perro";
+if(pet == "perro") {
+    console.log("Tengo un perro");
+} else if(pet == "gato") {
+    console.log("Tengo un gato");
+} else if(pet == "pájaro") {
+    console.log("Tengo un pájaro");
+} else {
+    console.log("No tengo una mascota convencional");
+}
 //Escribe tu código aquí
 
 
@@ -28,6 +42,19 @@ const pet = "perro";
 
 //Ejercicio 5: Haz el mismo ejercicio 3, pero con el condicional switch.
 
+switch(pet) {
+    case "perro":
+        console.log("Tengo un perro");
+        break;
+    case "gato":
+        console.log("Tengo un perro");
+        break;
+    case "pájaro":
+        console.log("Tengo un pájaro");
+        break;
+    default:
+    console.log("No tengo una mascota convencional");
+}
 //Escribe tu código aquí
 
 
@@ -35,7 +62,8 @@ const pet = "perro";
 
 const weather = "soleado"
 
-const result = //Escribe tu código aquí;
+const result = weather == "soleado" ? "Me vestiré con un vestido":"Me vestiré con pantalón" 
+//Escribe tu código aquí
 
 console.log(result)
 
@@ -45,6 +73,13 @@ console.log(result)
 
 const value = '1'
 
+if (typeof value == "number") {
+    console.log("Es un número")
+} else if (typeof value == "string"){
+    console.log("Es un string")
+} else {
+    console.log("No es ni número ni string")
+}
 //Escribe tu código aquí
 
 
@@ -52,6 +87,9 @@ const value = '1'
 
 //Ejercicio 9: Imprime en consola una lista del 0 al 10 con el bucle for
 
+for (let i = 0; i <= 10; i++) {
+    console.log(i)
+}
 //Escribe tu código aquí
 
 
@@ -80,6 +118,9 @@ const programmers = [
     }     
 ]
 
+for (let key in programmers) {
+    console.log(key + ':' + programmers[key].name + ' ' + programmers[key].lastname + ', su aporte fue ' + programmers[key].knowledge)
+} 
 //Escribe tu código aquí
 
 
@@ -87,27 +128,48 @@ const programmers = [
 
 const names = ['Carla', 'Alex', 'Judith', 'Maria', 'Noelia']
 
+for (let n of names) {
+    console.log("Hola, mi nombre es " + n)
+}
 //Escribe tu código aquí
 
 
 //Ejercicio 12: Con un bucle while imprime en consola una lista del 1 al 5.
 
+let index = 1
+while (index <= 5) {
+    console.log(index)
+}
 //Escribe tu código aquí
 
 
 //Ejercicio 13: Realiza el mismo ejercicio anterior pero con un bucle do while.
 
+do {
+    console.log(index)
+}
+while (index <= 5) 
 //Escribe tu código aquí
 
 
 //Ejercicio 14: Saludo Personalizado
 //Crea una función llamada saludar que tome un parámetro llamado nombre y devuelva un saludo personalizado. Luego, llama a la función con diferentes nombres y muestra el resultado en la consola.
 
+function saludar(nombre) {
+    let saludo = 'Hola ' + nombre
+    console.log(saludo)
+}
+saludar('Vita') 
 //Escribe tu código aquí
 
 
 //Ejercicio 15: Calcular el Área de un Rectángulo
 //Crea una función llamada calcularAreaRectangulo que tome dos parámetros (ancho y alto) y devuelva el área del rectángulo. Luego, llama a la función con diferentes valores de ancho y alto y muestra el resultado en la consola.
 
+function calcularAreaRectangulo(ancho, alto){
+    let areaRectangulo = ancho * alto
+    console.log(areaRectangulo)
+}
+calcularAreaRectangulo(3, 4)
 //Escribe tu código aquí
 
